@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 TaskFlow Management
 
-## Getting Started
+A high-performance, full-stack productivity suite built with a focus on **Visual Strategy** and **Task Architecture**. This project serves as a comprehensive exploration into modern web technologies, featuring a seamless integration of interactive drawing canvases and persistent database management.
 
-First, run the development server:
+![Next.js](https://img.shields.io)
+![PostgreSQL](https://img.shields.io)
+![TypeScript](https://img.shields.io)
+![Tailwind CSS](https://img.shields.io)
+![Framer Motion](https://img.shields.io)
+
+
+## ✨ Core Features
+
+- **🔐 Per-User Authentication:** Secure login flow ensuring every user has a private, isolated workspace.
+- **📝 SQL-Powered Task Engine:** Create, Update, and Delete (CRUD) operations synced directly with a PostgreSQL database.
+- **🎨 Infinite Strategy Canvas:** A built-in digital whiteboard (Tldraw) for mind-mapping, architecture, and visual planning.
+- **🌓 Advanced Dark Theme:** A "Deep Midnight" glassmorphism UI optimized for long-duration "Deep Work" sessions.
+- **🖱️ Scroll Isolation Logic:** Custom JavaScript event handling to prevent scroll-bubbling between the canvas and the webpage.
+- **⚡ Framer Motion Interactivity:** High-end micro-interactions, staggered entrances, and tactile hover states.
+
+## 🛠️ The Tech Stack
+
+- **Framework:** [Next.js 14/15](https://nextjs.org) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org) for type-safe development
+- **Database:** [PostgreSQL](https://www.postgresql.org) (Relational Data Persistence)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Animations:** [Framer Motion](https://www.framer.com)
+- **Canvas Engine:** [Tldraw SDK](https://tldraw.dev)
+- **Icons:** Lucide React & React Icons
+
+## 🚀 Getting Started
+
+1. **First, clone the repository:**
+       git clone https://github.com
+
+
+2. **Install Dependencies**
+       npm install
+
+3. **Set up Environment Variables:**
+      DATABASE_URL="your_postgresql_connection_string"
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_key"
+
+
+
+   4.** Run the development server:**
+       npm run dev
+
+
+
+
+
+   👨‍💻 Developed By
+Saad Mirza
+Full-Stack Developer & UI Enthusiast
+Portfolio
+GitHub
+Email
+
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com
