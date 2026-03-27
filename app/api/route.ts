@@ -1,13 +1,13 @@
 import sql from "@/lib/db";
 import { NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
+import { error } from "console";
 export async function POST(req: Request) {
     try {
         //getting data from frontend here and declareing as a variable
         const body = await req.json() as { title: string; description: string; dueTime: string; dueDate: string; userId: string };
         const { title, description, dueTime, dueDate, userId } = body;
-
-
+  
  
 
 //query for database
@@ -27,6 +27,7 @@ export async function GET(req: Response) {
         //for getting only a single user tasks getting user id for server side 
              const { userId } = await auth();
         const result = await sql`SELECT * FROM tasks WHERE user_id = ${userId} ORDER BY created_at DESC`
+    
        return  NextResponse.json({ message: "Task fetched successfully", result })
         
     } catch (error) {

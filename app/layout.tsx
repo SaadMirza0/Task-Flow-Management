@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider, Show, SignInButton, SignUpButton } from '@clerk/nextjs'
+import Navbar from "../component/Navbar"
+import Footer from "../component/Footer"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,12 +21,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
+     <ClerkProvider>
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClerkProvider>
+       
           {/* only show when the user is sign-out */}
-          <Show when="signed-out">
-            <div className="flex justify-center items-center">
+          {/* <Show when="signed-out">
+         <div>
               <SignInButton mode="modal">
                 <button className="border border-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-gray-50">
                   Login
@@ -37,14 +40,16 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                 </button>
               </SignUpButton>
             </div>
-          </Show>
+          </Show> */}
 
           {/* only show the main home page or other pages when the user is sign in  */}
-          <Show when="signed-in">
+          {/* <Show when="signed-in"> */}
+          <Navbar/>
             {children}
-          </Show>
-        </ClerkProvider>
+          {/* </Show> */}
+ <Footer/>
       </body>
     </html>
+           </ClerkProvider>
   );
 }
