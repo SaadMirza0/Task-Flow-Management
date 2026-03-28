@@ -1,2 +1,15 @@
 @import "tailwindcss";
 
+
+@keyframes revealUp {
+  0% { opacity: 0; transform: translateY(20px); filter: blur(10px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.reveal {
+  opacity: 0;
+  animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.delay-text { animation-delay: 0.6s; }
+.delay-card { animation-delay: 1.2s; }

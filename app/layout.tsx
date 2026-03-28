@@ -75,7 +75,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
           <Navbar/>
             {children}
-          {/* </Show> */}
+         
  <Footer/>
       </body>
     </html>

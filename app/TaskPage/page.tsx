@@ -157,7 +157,7 @@ const handleToggleStatus = async (id: string, currentStatus: string) => {
 <Show when={"signed-out"}>signin</Show>
         <Show when={"signed-in"}>
     <div suppressHydrationWarning className="min-h-screen bg-[#030712] text-slate-100 font-sans selection:bg-blue-500/30 overflow-x-hidden">
-            
+            {/* superpassing  */}
             {/* --- SECTION 1: TASK COMMAND CENTRE --- */}
 <section className="max-w-6xl mx-auto py-8 md:py-12 px-4 md:px-6">
 <header className="mb-10">
@@ -167,7 +167,7 @@ const handleToggleStatus = async (id: string, currentStatus: string) => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">         
                     {/* LEFT: Task Form & Text Editor Feel */}
               <div className="lg:col-span-7">
-    <div className="group bg-[#0B0F1A] border border-slate-800 rounded-[2rem] shadow-2xl p-6 md:p-8 transition-all hover:border-blue-500/40 hover:shadow-blue-500/5 relative overflow-hidden">
+    <div className="group bg-[#0B0F1A] border border-slate-800 rounded-4xl shadow-2xl p-6 md:p-8 transition-all hover:border-blue-500/40 hover:shadow-blue-500/5 relative overflow-hidden">
         
         {/* Subtle Background Glow */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 blur-[80px] rounded-full pointer-events-none" />
@@ -199,25 +199,25 @@ const handleToggleStatus = async (id: string, currentStatus: string) => {
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-white/5">
-                <div className="flex items-center gap-2 bg-white/5 px-4 py-2.5 rounded-2xl border border-white/5 group/input focus-within:border-blue-500/50 transition-all hover:bg-white/[0.08]">
+                <div className="flex items-center gap-2 bg-white/5 px-4 py-2.5 rounded-2xl border border-white/5 group/input focus-within:border-blue-500/50 transition-all hover:bg-white/8">
                     <Calendar size={14} className="text-slate-500 group-focus-within/input:text-blue-400" />
                     <input 
                         name="dueDate" 
                         type="date" 
                         value={form.dueDate} 
                         onChange={handleChange} 
-                        className="bg-transparent text-xs outline-none cursor-pointer font-semibold text-slate-300 [color-scheme:dark]" 
+                        className="bg-transparent text-xs outline-none cursor-pointer font-semibold text-slate-300 scheme-dark" 
                     />
                 </div>
                 
-                <div className="flex items-center gap-2 bg-white/5 px-4 py-2.5 rounded-2xl border border-white/5 group/input focus-within:border-blue-500/50 transition-all hover:bg-white/[0.08]">
+                <div className="flex items-center gap-2 bg-white/5 px-4 py-2.5 rounded-2xl border border-white/5 group/input focus-within:border-blue-500/50 transition-all hover:bg-white/8">
                     <Clock size={14} className="text-slate-500 group-focus-within/input:text-blue-400" />
                     <input 
                         name="dueTime" 
                         type="time" 
                         value={form.dueTime} 
                         onChange={handleChange} 
-                        className="bg-transparent text-xs outline-none cursor-pointer font-semibold text-slate-300 [color-scheme:dark]" 
+                        className="bg-transparent text-xs outline-none cursor-pointer font-semibold text-slate-300 scheme-dark" 
                     />
                 </div>
        
@@ -235,7 +235,7 @@ const handleToggleStatus = async (id: string, currentStatus: string) => {
     <p>Sign-In to show tasks </p>
     </Show>}
                     {/* RIGHT: Task List */}
-              <div className="lg:col-span-5 h-[600px] flex flex-col bg-[#0B0F1A] rounded-[2.5rem] p-6 border border-slate-800 shadow-2xl relative overflow-hidden">
+              <div className="lg:col-span-5 h-150 flex flex-col bg-[#0B0F1A] rounded-[2.5rem] p-6 border border-slate-800 shadow-2xl relative overflow-hidden">
     {/* Header Section */}
     <div className="flex items-center justify-between mb-8 px-2">
         <div className="flex items-center gap-3">
@@ -265,7 +265,7 @@ const handleToggleStatus = async (id: string, currentStatus: string) => {
                     className="bg-slate-900/40 backdrop-blur-sm p-5 rounded-3xl border border-white/5 hover:border-blue-500/40 hover:bg-slate-900/60 transition-all group relative overflow-hidden"
                 >
                     {/* Hover Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 pointer-events-none" />
+                    <div className="absolute inset-0 bg-linear-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
                     
                     <div className="flex justify-between items-start mb-2">
                         <h4 className="font-bold text-slate-100 group-hover:text-blue-400 transition-colors leading-tight text-lg">

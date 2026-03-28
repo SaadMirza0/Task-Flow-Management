@@ -11,7 +11,7 @@ export default function Navbar(){
         whileHover={{ scale: 1.05 }}
         className="text-xl font-extrabold tracking-tighter text-white cursor-pointer"
       >
-        <span className="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
             <Link href={"/"} >
           Logo
           </Link>
@@ -27,9 +27,9 @@ export default function Navbar(){
       className="relative cursor-pointer transition-colors duration-200 group"
       onClick={() => {
         if (item === "WhiteBoard") {
-          // Scrolls to the bottom of the page where the Whiteboard is
+   
           window.scrollTo({
-            top: document.documentElement.scrollHeight,
+            top:850,
             behavior: 'smooth'
           });
         }
@@ -79,7 +79,7 @@ export default function Navbar(){
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="p-1 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 p-[2px]"
+            className="p-1 rounded-full bg-linear-to-tr from-blue-500 to-indigo-500 "
           >
             <div className="bg-[#0B0F1A] rounded-full p-0.5">
               <UserButton />

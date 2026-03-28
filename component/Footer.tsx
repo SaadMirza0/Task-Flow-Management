@@ -45,7 +45,7 @@ export default function Footer(){
                 target="_blank"
                 whileHover={{ scale: 1.15, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                className={`flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 text-slate-400 transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] ${social.hover}`}
+                className={`flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 text-slate-400 transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 ${social.hover}`}
               >
                 <span className="text-xl">{social.icon}</span>
               </motion.a>
